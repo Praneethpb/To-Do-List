@@ -87,7 +87,6 @@ ul li {
     user-select: none;
     font-size: 1.2rem;
     position: relative;
-    left: 30px;
 }
 
 ul li::before {
@@ -110,8 +109,6 @@ ul li.checked {
     color: green;
 }
 
-ul li.checked:hover {
-}
 
 
 ul li.checked::before {
@@ -124,7 +121,7 @@ ul li.checked::before {
 ul li span {
     /* border: 2px solid black; */
     position: absolute;
-    right: 60px;
+    right: 0px;
     width: 30px;
     height: 30px;
     border-radius: 10%;
