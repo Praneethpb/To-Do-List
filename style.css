@@ -1,0 +1,147 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* background-color: #879792; */
+    font-family: 'Exo 2', sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #A9FBD7;
+    padding: 10px;
+}
+/*  */
+
+.todo-app {
+    /* border: 1px solid black; */
+    width: 100%;
+    max-width: 640px;
+    margin: 75px auto 5px;
+    padding: 40px 30px 60px;
+    border-radius: 10px;
+    height: 100%;
+    min-height: 500px;
+    background-color: #FFF;
+}
+
+.todo-app h2 {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 26vh;
+}
+
+.todo-app h2 img {
+    width: 40px;
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #CDDBE0;
+    margin: 20px auto 20px;
+    border-radius: 100px;
+    padding-left: 20px;
+    /* padding-right: 40px; */
+    height: 70px;
+    min-height: 50px;
+    
+}
+
+input {
+    flex:1;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #AE1E2C;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: inset 2px 3px 10px -4px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    padding-left: 40px;
+
+}
+
+
+button {
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    width: 25%;
+    height: 100%;
+    font-size: 1.2rem;
+    color: #FF8811;
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+    cursor: pointer;
+    padding: 15px 45px;
+    user-select: none;
+    font-size: 1.2rem;
+    position: relative;
+    left: 30px;
+}
+
+ul li::before {
+    content: '';
+    background-image: url(./images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 17px;
+    left: 10px;
+    height: 25px;
+    width: 25px;
+        transition-duration: 0.8s;
+}
+
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+    color: green;
+}
+
+ul li.checked:hover {
+}
+
+
+ul li.checked::before {
+    background-image: url(images/checked.png);
+    filter: invert(100%);
+    transition-duration: 0.8s;
+    
+}
+
+ul li span {
+    /* border: 2px solid black; */
+    position: absolute;
+    right: 60px;
+    width: 30px;
+    height: 30px;
+    border-radius: 10%;
+    top: 9px;
+    text-align: center;
+    transition-duration: 0.1s;
+}
+
+ul li span:hover {
+    background-color: rgb(255, 104, 104);
+    /* animation-duration: 4s; */
+    transition-duration: 0.1s;
+        transition-timing-function: linear;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
