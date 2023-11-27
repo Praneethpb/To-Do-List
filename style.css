@@ -145,3 +145,25 @@ footer {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+@media only screen and (max-width: 400px) {
+    
+    input {
+        width: 30px;
+    }
+    
+    .todo-app{
+        padding-left: 5px;
+        margin-left: 0px;
+
+    }
+
+    .todo-app h2 {
+        color: #002765;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        width: 20vh;
+    }
+
+}
+
